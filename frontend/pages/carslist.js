@@ -13,7 +13,7 @@ const carslist = () => {
         setLoading(true)
         try {
             const response = await axios.get(
-                `https://desol-car-app-backend.vercel.app/api/cars/`
+                `http://localhost:5000/api/cars/`
             );
             setCars(response.data.getCars)
             setLoading(false)
